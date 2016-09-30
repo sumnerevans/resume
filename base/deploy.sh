@@ -5,8 +5,12 @@ set -e
 pdflatex resume.tex
 
 echo ""
-echo "========== Deploying Built Website to Server =========="
-scp resume.pdf evansfamilywebsite@the-evans.family:/home/evansfamilywebsite/the-evans.family/sumner/resume.pdf
+echo "========== Deploying to the-evans.family =========="
+scp resume.pdf tef:/home/evansfamilywebsite/the-evans.family/sumner/resume.pdf
+
+echo ""
+echo "========== Deploying to inside.mines.edu/~jonathanevans =========="
+scp resume.pdf illuminate:/u/eu/an/jonathanevans/public_html
 
 echo ""
 echo "Deploy Successful!"
