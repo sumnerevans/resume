@@ -6,7 +6,7 @@ pdflatex resume.tex
 
 echo ""
 echo "========== Deploying to the-evans.family =========="
-scp resume.pdf tef:/home/evansfamilywebsite/the-evans.family/sumner/resume.pdf
+scp resume.pdf tef:/home/evansfamilywebsite/the-evans.family/sumner/
 
 echo ""
 echo "========== Deploying to inside.mines.edu/~jonathanevans =========="
