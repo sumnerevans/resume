@@ -8,14 +8,22 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{fontawesome}
 \usepackage{fancyhdr}
+\usepackage{sectsty}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
 \pagestyle{fancy}
 
-\cfoot{\today}
+\cfoot{Updated: \today}
 \definecolor{header-blue}{HTML}{3D85C6}
 
 \setlength{\parindent}{0pt}
-\sectionfont{\color{header-blue}\fontsize{11}{0}\selectfont}
-\titlespacing*{\section}{0pt}{15pt}{5pt}
+\setlength{\parskip}{-2pt}
+\sectionfont{\color{header-blue}\fontsize{11}{0}\selectfont\MakeUppercase}
+\titlespacing*{\section}{0pt}{17pt}{8pt}
 \pagenumbering{gobble} % No page number
 
 \setlist[itemize]{noitemsep}
@@ -26,30 +34,30 @@
 \begin{center}
     \huge\textbf{Jonathan Sumner Evans} \\
     \vspace{3pt}
-    \small +1 (720) 459-1501
-    \textbar\ \href{mailto:jonathanevans@mines.edu}{jonathanevans@mines.edu}
-    \textbar\ \href{http://sumnerevans.com}{sumnerevans.com}
-    \textbar\ 25 Amaranth Dr., Littleton, CO 80127 \\
+    \small \faPhone\ +1 (720) 459-1501
+    \textbar\textbar\ \href{mailto:jonathanevans@mines.edu}{\faEnvelopeO\ jonathanevans@mines.edu}
+    \textbar\textbar\ \href{http://sumnerevans.com}{\faGlobe\ sumnerevans.com}
+    \textbar\textbar\ \faHome\ 25 Amaranth Dr., Littleton, CO 80127 \\
     \href{http://stackoverflow.com/users/2319844/sumner-evans}{\faStackOverflow\
     stackoverflow.com/users/2319844/sumner-evans}
-    \textbar\ \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\
+    \textbar\textbar\ \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\
     linkedin.com/in/sumnerevans}
-    \textbar\ \href{https://github.com/sumnerevans}{\faGithub\
+    \textbar\textbar\ \href{https://github.com/sumnerevans}{\faGithub\
     github.com/sumnerevans}
     \rule{\textwidth}{0.5pt}
 \end{center}
 
-\section*{EDUCATION}
+\section*{Education}
 \textbf{Colorado School of Mines} - Golden, CO - B.S. Computer Science - 4.0 GPA
 \hfill July 2016 - May 2018
 \begin{itemize}
-    \item Vice President of the Mines ACM Chapter and Secretary of the Linux
-        Users Group (LUG)
+    \item Vice President of the Mines ACM Student Chapter and Secretary of the
+        Mines Linux Users Group (LUG)
     \item Placed 3rd in 2016 Regional ACM ICPC
-    \item Notable Classes: Data Structures, Linear Algebra, Software
-        Engineering, Algorithms, Computer Organization, Elements of Games and
-        Game Development, Advanced Software Engineering \hfill * = currently
-        enrolled
+    \item \textbf{Notable Classes:} Operating Systems*, Algorithms, Computer
+        Graphics*, Computer Simulation*, Virtual Reality*, Software Engineering,
+        Advanced Software Engineering, Computer Organization, Linear Algebra,
+        Data Structures \hfill\textit{* = currently enrolled}
 \end{itemize}
 
 \vspace{4pt}
@@ -61,7 +69,7 @@
     \item Presented at \textit{Claro} academic conference.
 \end{itemize}
 
-\section*{SKILLS}
+\section*{Skills}
 {\renewcommand\labelitemi{}
     \renewcommand\leftmargini{0pt}
     \begin{itemize}
@@ -69,13 +77,21 @@
             Node.js), C++, Java, \LaTeX, HTML, CSS, SQL
         \item \textbf{Design:} Website Design, Mockups, Requirements Gathering,
             Technical Specification
-        \item \textbf{Tools:} Vim, Visual Studio, Sublime Text, Atom, Git,
-            IntelliJ IDEA, Eclipse
-        \item \textbf{Operating Systems:} Linux, macOS, Windows
+        \item \textbf{Tools and Operating Systems:} Linux, macOS, Windows, Vim,
+            Visual Studio, Git, Sublime Text, IntelliJ IDEA
     \end{itemize}
 }
 
-\section*{WORK EXPERIENCE}
+\section*{Work Experience}
+\textbf{Teachers Assistant (Data Structures)} - Colorado School of Mines -
+Golden, CO \hfill Aug. 2017 - Present
+\begin{itemize}
+    \item Assist students during TA office hours and during the in-class lab
+        sessions.
+\end{itemize}
+
+
+\vspace{4pt}
 \textbf{Software Development Intern} - Kenzan - Denver, CO
 \hfill June 2017 - Aug. 2017
 \begin{itemize}
@@ -112,17 +128,18 @@
         use at Can/Am.
 \end{itemize}
 
-\section*{PORTFOLIO}
+\section*{Portfolio}
 \textbf{Wireless Debugging} -
 \href{https://github.com/sumnerevans/wireless-debugging}{github.com/sumnerevans/wireless-debugging}
 - Apache 2.0 License \hfill May 2017 - June 2017
 \begin{itemize}
     \item Mobile SDK and log-parsing web server to allow streaming of mobile app
         logs to a web UI console.
-    \item Built with team of 5 for CSCI 370 Computer Science Field Session.
+    \item Built with team of 5 for CSCI 370 Computer Science Field Session under
+        the supervision of Google.
 \end{itemize}
 
-\section*{PERSONAL ACHIEVEMENTS}
+\section*{Personal Achievements}
 \begin{itemize}
     \item \textbf{Taekwondo}: 3rd Degree Black Belt, three time Colorado State
         Champion, Certified Trainer
@@ -131,7 +148,7 @@
         Player
 \end{itemize}
 
-\section*{AWARDS AND HONORS}
+\section*{Awards and Honours}
 \begin{itemize}
     \item Deans List Fall 2016 and Spring 2017
     \item Grand Master Emeritus Soon Ho Lee Scholarship from the H.U. Lee
