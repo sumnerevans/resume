@@ -1,7 +1,8 @@
-\documentclass[10.5pt,letterpaper]{article}
+% !TEX program = xelatex
+\documentclass[10pt,letterpaper]{article}
 \usepackage[margin=0.65in]{geometry}
 \usepackage{graphicx}
-\usepackage[pdftex,pdfnewwindow=true]{hyperref}
+\usepackage[pdfnewwindow=true]{hyperref}
 \usepackage{sectsty}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -9,6 +10,7 @@
 \usepackage{fontawesome}
 \usepackage{fancyhdr}
 \usepackage{sectsty}
+\usepackage{fontspec}
 
 \tolerance=1
 \emergencystretch=\maxdimen
@@ -17,32 +19,32 @@
 
 \pagestyle{fancy}
 
-\cfoot{Updated: \today}
-\definecolor{header-blue}{HTML}{3D85C6}
+\definecolor{header-blue}{HTML}{1375CF}
+\renewcommand{\headrulewidth}{0pt}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{-2pt}
-\sectionfont{\color{header-blue}\fontsize{11}{0}\selectfont\MakeUppercase}
-\titlespacing*{\section}{0pt}{17pt}{8pt}
+\sectionfont{\fontsize{11}{0}\selectfont\MakeUppercase}
+\titlespacing*{\section}{0pt}{16pt}{6pt}
 \pagenumbering{gobble} % No page number
 
 \setlist[itemize]{noitemsep}
-\setlength{\leftmargini}{20pt}
+\setlength{\leftmargini}{13pt}
+
+\setmainfont{Open Sans}
 
 \begin{document}
 
 \begin{center}
-    \huge\textbf{Jonathan Sumner Evans} \\
+    {\huge\textbf{Jonathan Sumner Evans}} \\
     \vspace{3pt}
-    \small \faPhone\ +1 (720) 459-1501
-    \textbar\textbar\ \href{mailto:jonathanevans@mines.edu}{\faEnvelopeO\ jonathanevans@mines.edu}
-    \textbar\textbar\ \href{http://sumnerevans.com}{\faGlobe\ sumnerevans.com}
-    \textbar\textbar\ \faHome\ 25 Amaranth Dr., Littleton, CO 80127 \\
-    \href{http://stackoverflow.com/users/2319844/sumner-evans}{\faStackOverflow\
-    stackoverflow.com/users/2319844/sumner-evans}
-    \textbar\textbar\ \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\
+    \faPhone\ +1 (720) 459-1501
+    \textbar\ \href{mailto:jonathanevans@mines.edu}{\faEnvelope\ jonathanevans@mines.edu}
+    \textbar\ \faHome\ 25 Amaranth Dr., Littleton, CO 80127 \\
+    \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\
     linkedin.com/in/sumnerevans}
-    \textbar\textbar\ \href{https://github.com/sumnerevans}{\faGithub\
+    \textbar\ \href{http://sumnerevans.com}{\faGlobe\ sumnerevans.com}
+    \textbar\ \href{https://github.com/sumnerevans}{\faGithub\
     github.com/sumnerevans}
     \rule{\textwidth}{0.5pt}
 \end{center}
@@ -53,14 +55,13 @@
 \begin{itemize}
     \item Vice President of the Mines ACM Student Chapter and Secretary of the
         Mines Linux Users Group (LUG)
-    \item Placed 3rd in 2016 Regional ACM ICPC
     \item \textbf{Notable Classes:} Operating Systems*, Algorithms, Computer
         Graphics*, Computer Simulation*, Virtual Reality*, Software Engineering,
         Advanced Software Engineering, Computer Organization, Linear Algebra,
         Data Structures \hfill\textit{* = currently enrolled}
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 \textbf{Red Rocks Community College} - Lakewood, CO - 67 Credit Hours - 4.0 GPA
 \hfill Aug. 2012 - May 2016
 \begin{itemize}
@@ -74,7 +75,7 @@
     \renewcommand\leftmargini{0pt}
     \begin{itemize}
         \item \textbf{Language Experience:} Python, C\#, JavaScript (Ext JS,
-            Node.js), C++, Java, \LaTeX, HTML, CSS, SQL
+            Node.js), C++, Java, {\fontfamily{ptm}\selectfont\LaTeX}, HTML, CSS, SQL
         \item \textbf{Design:} Website Design, Mockups, Requirements Gathering,
             Technical Specification
         \item \textbf{Tools and Operating Systems:} Linux, macOS, Windows, Vim,
@@ -90,8 +91,7 @@ Golden, CO \hfill Aug. 2017 - Present
         sessions.
 \end{itemize}
 
-
-\vspace{4pt}
+\vspace{2pt}
 \textbf{Software Development Intern} - Kenzan - Denver, CO
 \hfill June 2017 - Aug. 2017
 \begin{itemize}
@@ -101,7 +101,7 @@ Golden, CO \hfill Aug. 2017 - Present
         a WebPack build.
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 \textbf{Software Developer} - Can/Am Technologies, Inc. - Lakewood, CO
 \hfill July 2013 - Aug. 2016
 \begin{itemize}
@@ -112,7 +112,7 @@ Golden, CO \hfill Aug. 2017 - Present
         web-based application.
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 \textbf{Taekwondo Instructor} - Ken Caryl ATA Martial Arts - Littleton, CO
 \hfill Nov. 2015 - Aug. 2016
 \begin{itemize}
@@ -120,7 +120,7 @@ Golden, CO \hfill Aug. 2017 - Present
         classes.
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 \textbf{Software Developer Intern} - Can/Am Technologies, Inc - Lakewood, CO
 \hfill Feb. 2013 - June 2013
 \begin{itemize}
@@ -133,10 +133,10 @@ Golden, CO \hfill Aug. 2017 - Present
 \href{https://github.com/sumnerevans/wireless-debugging}{github.com/sumnerevans/wireless-debugging}
 - Apache 2.0 License \hfill May 2017 - June 2017
 \begin{itemize}
-    \item Mobile SDK and log-parsing web server to allow streaming of mobile app
+    \item Mobile library and log-parsing web server to allow streaming of mobile app
         logs to a web UI console.
-    \item Built with team of 5 for CSCI 370 Computer Science Field Session under
-        the supervision of Google.
+    \item Built with team of 5 for Computer Science Field Session under the
+        supervision of Google.
 \end{itemize}
 
 \section*{Personal Achievements}
@@ -148,9 +148,11 @@ Golden, CO \hfill Aug. 2017 - Present
         Player
 \end{itemize}
 
-\section*{Awards and Honours}
+\section*{Awards and Honors}
 \begin{itemize}
     \item Deans List Fall 2016 and Spring 2017
+    \item Placed 3rd in 2016 Regional Association for Computing Machinery
+        International Collegiate Programming Contest (ICPC)
     \item Grand Master Emeritus Soon Ho Lee Scholarship from the H.U. Lee
         Memorial Foundation (June 2016)
     \item Red Rocks Community College Phi Theta Kappa Honor Society (March 2013
