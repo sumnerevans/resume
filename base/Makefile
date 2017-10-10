@@ -1,7 +1,7 @@
 all: compile
 
 compile:
-	pdflatex resume.tex
+	xelatex resume.tex
 
 deploy: compile
-	scp resume.pdf tef:/home/evansfamilywebsite/the-evans.family/sumner/
+	scp resume.pdf sws:/home/sumnerevans/sumnerevans.com/static/
