@@ -1,0 +1,17 @@
+Copyright (c) Jonathan Sumner Evans (Sumner Evans). All Rights Reserved.
+
+1. The PDF of this resume is the sole property of Sumner Evans. You may look at
+   the content to gain inspiration for your own purposes. You may not
+   redistribute the resume PDF without written concent from Sumner Evans (see
+   3).
+
+2. You are free to use, modify, derive works from (i.e. compile the LaTeX), and
+   distribute the LaTeX source of the resume but you must strip any references
+   to Sumner Evans from it.
+
+3. If you want to use anything in this repo for a reason not specified above,
+   you need to get written permission from Sumner Evans by contacting him at
+   the email on the resume.
+
+   Note that "written permission" means a document stating my approval of the
+   use and cryptographically signed with my GPG key: B50022FD.)
