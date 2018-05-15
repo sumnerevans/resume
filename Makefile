@@ -1,13 +1,7 @@
-FILE=resume
+all: resume.pdf
 
-all: compile
-
-compile:
-	xelatex $(FILE).tex
+%.pdf: %.tex
+	xelatex $<
 
 clean:
-	rm -rf $(FILE).aux
-	rm -rf missfont.log
-	rm -rf $(FILE).fdb_latexmk
-	rm -rf $(FILE).log
-	rm -rf $(FILE).out
+	rm -rf *.aux missfont.log *.fdb_latexmk *.log *.out
