@@ -10,4 +10,4 @@ Copyright and License
 long as you strip out all references to me. See the `LICENSE`_ file for
 details.
 
-.. _LICENSE: https://github.com/sumnerevans/resume/blob/master/LICENSE
+.. _LICENSE: https://gitlab.com/sumner/resume/blob/master/LICENSE
