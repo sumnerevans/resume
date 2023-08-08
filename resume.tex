@@ -1,13 +1,13 @@
 % !TEX program = xelatex
 \documentclass[10pt,letterpaper]{article}
-\usepackage[margin=0.65in]{geometry}
+\usepackage[margin=0.55in]{geometry}
 \usepackage{graphicx}
 \usepackage[pdfnewwindow=true]{hyperref}
 \usepackage{sectsty}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage{fontawesome}
+\usepackage{forkawesome}
 \usepackage{fancyhdr}
 \usepackage{sectsty}
 \usepackage{fontspec}
@@ -39,16 +39,20 @@
 
 \begin{document}
 
-\begin{center}
-    {\huge\textbf{Jonathan Sumner Evans}} \\
-    \vspace{3pt}
-    \href{https://sumnerevans.com}{\faGlobe\ sumnerevans.com}
-    \textbar\ \href{mailto:resume@sumnerevans.com}{\faEnvelope\ resume@sumnerevans.com}
-    \textbar\ \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\ linkedin.com/in/sumnerevans} \\
-    \href{https://github.com/sumnerevans}{\faGithub\ github.com/sumnerevans}
-    \textbar\ \href{https://stackoverflow.com/users/2319844/sumner-evans}{\faStackOverflow\ stackoverflow.com/users/2319844/sumner-evans}
-    \rule{\textwidth}{0.5pt}
-\end{center}
+\begin{minipage}[b][][b]{0.5\linewidth}
+    {\huge\textbf{Jonathan Sumner Evans}}
+
+    \vspace{5pt}
+    \href{mailto:resume@sumnerevans.com}{\faEnvelope\ resume@sumnerevans.com}
+    \textbar\ \href{https://matrix.to/#/@sumner:nevarro.space}{\faMatrixOrg\ @sumner:nevarro.space}
+\end{minipage}\hfill
+\begin{minipage}[b][][b]{0.45\linewidth}
+    \href{https://sumnerevans.com}{\faGlobe\ sumnerevans.com} \\
+    \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\ linkedin.com/in/sumnerevans} \\
+    \href{https://github.com/sumnerevans}{\faGithub\ github.com/sumnerevans} \\
+    \href{https://stackoverflow.com/users/2319844/sumner-evans}{\faStackOverflow\ stackoverflow.com/users/2319844/sumner-evans}
+\end{minipage}
+\rule{\textwidth}{0.5pt}
 
 \section*{\faBriefcase\ Work Experience}
 \textbf{Software Engineer} --- Beeper --- Remote
