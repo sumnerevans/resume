@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage{sectsty}
 \usepackage{fontspec}
+\usepackage[document]{ragged2e}
 
 \tolerance=1
 \emergencystretch=\maxdimen
@@ -28,8 +29,7 @@
 \titlespacing*{\section}{0pt}{10pt}{5pt}
 \pagenumbering{gobble} % No page number
 
-\setlist[itemize]{noitemsep}
-\setlength{\leftmargini}{13pt}
+\setlist[itemize]{itemsep=-1.5pt,leftmargin=13pt}
 
 \setmainfont{Iosevka}
 
@@ -44,9 +44,9 @@
 
     \vspace{5pt}
     \href{mailto:resume@sumnerevans.com}{\faEnvelope\ resume@sumnerevans.com}
-    \textbar\ \href{https://matrix.to/#/@sumner:nevarro.space}{\faMatrixOrg\ @sumner:nevarro.space}
+    $\bullet$\ \href{https://matrix.to/#/@sumner:nevarro.space}{\faMatrixOrg\ @sumner:nevarro.space}
 \end{minipage}\hfill
-\begin{minipage}[b][][b]{0.45\linewidth}
+\begin{minipage}[b][][b]{0.4375\linewidth}
     \href{https://sumnerevans.com}{\faGlobe\ sumnerevans.com} \\
     \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\ linkedin.com/in/sumnerevans} \\
     \href{https://github.com/sumnerevans}{\faGithub\ github.com/sumnerevans} \\
@@ -58,45 +58,60 @@
 \textbf{Software Engineer} --- Beeper --- Remote
 \hfill \textit{July 2021 - Present}
 \begin{itemize}
-    \item Core member of a team which implemented a \textbf{Matrix} homeserver
-        called
+    \item Started a project to build a \textbf{Matrix}-compatible homeserver
+        written in \textbf{Go} called
         \href{https://github.com/sumnerevans/hungryserv-presentation}{Hungryserv}
         which enabled us to scale from hundreds of users to tens of thousands of
-        users.
-    \item Implemented a \href{https://github.com/beeper/linkedin}{LinkedIn
-        Messages} bridge in \textbf{Python}.
-    \item Built a \href{https://github.com/beeper/chatwoot}{Chatwoot bot} in
-        \textbf{Go} to help streamline our support team's process.
-    \item Instrumented bridge metrics for measuring message send latency and
-        reliability. Built a service to process those metrics and send them to
-        BigQuery.
+        users. Currently a core member of the team formed to productionize and
+        maintain the project.
+    \item Reverse-engineered the
+        \href{https://github.com/beeper/linkedin-messaging-api}{LinkedIn Messaging API}
+        and implemented a
+        \href{https://github.com/beeper/linkedin}{LinkedIn bridge} in
+        \textbf{Python}.
+    \item Streamlined our support team's ability to chat directly with users by
+        building a
+        \href{https://github.com/beeper/chatwoot}{Chatwoot bot} in
+        \textbf{Go}.
+    \item Measured message send \textbf{latency and reliability} by
+        instrumenting bridge \textbf{metrics}. Built a service to process those
+        metrics and send them to BigQuery.
     \item Defined a framework for importing users' chat history, and
         implemented it in the
         \href{https://github.com/mautrix/whatsapp}{WhatsApp},
         \href{https://github.com/mautrix/facebook}{Facebook},
         \href{https://github.com/mautrix/instagram}{Instagram}, and
-        \href{https://github.com/mautrix/imessage}{iMessage} bridges.
+        (in-progress) \href{https://github.com/mautrix/imessage}{iMessage} bridges.
+    \item Build and modify various backend services for managing our
+        \textbf{Kubernetes}-based infrastructure.
 \end{itemize}
 
 \textbf{Adjunct Professor} --- Colorado School of Mines --- Golden, CO
 \hfill \textit{Aug. 2018 - Present}
 \begin{itemize}
     \item CSCI 406 \textbf{Algorithms} in Fall 2018, Spring 2022, and Fall 2023. \\
-        \textit{Topics Included:} analysis of algorithms, evaluation of data
-        structures, sorting algorithms, graph algorithms, dynamic programming,
-        and NP-completeness.
+        \textit{Topics Include:} graph algorithms, dynamic programming,
+        NP-completeness.
+        \begin{itemize}[topsep=-2pt]
+            \item Developed new homework assignments for students who took an
+                updated set of prerequisite courses.
+        \end{itemize}
     \item CSCI 341 \textbf{Computer Organization} in Spring 2023. \\
-        \textit{Topics Included:} RISC-V assembly, computer arithmetic, processor
-        design, and memory hierarchy.
+        \textit{Topics Included:} RISC-V assembly, computer arithmetic,
+        processor design, memory hierarchy.
     \item CSCI 400 \textbf{Principles of Programming Languages} in Spring
         2019, Fall 2020, Fall 2021, and Fall 2022. \\
-        \textit{Topics Included:} programming language evaluation, Python,
-        Lambda Calculus, functional programming, Racket, OCaml, programming
-        language implementation.
+        \textit{Topics Included:} Lambda Calculus, functional programming in
+        OCaml, programming language implementation.
     \item CSCI 564 \textbf{Advanced Computer Architecture} in Spring 2021. \\
-        \textit{Topics Included:} cache, pipelining, memory hierarchy, virtual
-        memory, branch prediction, multiprocessor architectures, and cache
-        coherence.
+        \textit{Topics Included:} cache coherence, virtual memory, branch
+        prediction, multiprocessor architectures.
+        \begin{itemize}[topsep=-2pt]
+            \item Developed improved starter code for two projects and created
+                another project from scratch.
+            \item Created in-class worksheets to add an interactive element to
+                the course.
+        \end{itemize}
 \end{itemize}
 
 \textbf{Software Engineer} --- The Trade Desk --- Denver, CO
@@ -178,7 +193,13 @@
 
 \section*{\faUsers\ Talks and Presentations}
 \begin{itemize}
-    \item \textbf{Hungryserv: A Homeserver Optimized for Unfederated Use-Cases}
+    % \item \textbf{Finding Your Home in Nix}
+    %     --- LinuxFest Northwest
+    %     \hfill \textit{October 2023} \\
+    %     Explained and demoed Nix Home Manager, a tool for declaratively managing
+    %     user home environments.
+    \item \href{https://github.com/sumnerevans/hungryserv-presentation}{%
+            \textbf{Hungryserv: A Homeserver Optimized for Unfederated Use-Cases}}
         --- Berlin Matrix Summit
         \hfill \textit{August 2022} \\
         Discussed a Matrix-compatible homeserver that Beeper uses to handle
