@@ -25,11 +25,11 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\sectionfont{\fontsize{11}{0}\selectfont\MakeUppercase}
-\titlespacing*{\section}{0pt}{10pt}{5pt}
+\sectionfont{\color{header-blue}\fontsize{12}{0}\selectfont\MakeUppercase}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
 \pagenumbering{gobble} % No page number
 
-\setlist[itemize]{itemsep=-1.5pt,leftmargin=13pt}
+\setlist[itemize]{itemsep=-1pt,leftmargin=13pt}
 
 \setmainfont{Iosevka}
 
@@ -55,7 +55,8 @@
 \rule{\textwidth}{0.5pt}
 
 \section*{\faBriefcase\ Work Experience}
-\textbf{Software Engineer} --- Beeper --- Remote
+{\fontsize{11}{0}
+\textbf{Software Engineer} --- Beeper --- Remote}
 \hfill \textit{July 2021 - Present}
 \begin{itemize}
     \item Started a project to build a \textbf{Matrix}-compatible homeserver
@@ -82,11 +83,12 @@
         \href{https://github.com/mautrix/facebook}{Facebook},
         \href{https://github.com/mautrix/instagram}{Instagram}, and
         (in-progress) \href{https://github.com/mautrix/imessage}{iMessage} bridges.
-    \item Building and modifying various backend services for managing our
+    \item Building and modifying various services for managing our
         \textbf{Kubernetes}-based infrastructure.
 \end{itemize}
 
-\textbf{Adjunct Professor} --- Colorado School of Mines --- Golden, CO
+{\fontsize{11}{0}
+\textbf{Adjunct Professor} --- Colorado School of Mines --- Golden, CO}
 \hfill \textit{Aug. 2018 - Present}
 \begin{itemize}
     \item CSCI 406 \textbf{Algorithms} in Fall 2018, Spring 2022, and Fall 2023. \\
@@ -114,7 +116,8 @@
         \end{itemize}
 \end{itemize}
 
-\textbf{Software Engineer} --- The Trade Desk --- Denver, CO
+{\fontsize{11}{0}
+\textbf{Software Engineer} --- The Trade Desk --- Denver, CO}
 \hfill \textit{June 2019 - July 2021}
 % \begin{itemize}
 %     \item I was responsible for building features related to Connected TV across
@@ -132,7 +135,8 @@
 % \hfill June 2017 - Aug. 2017
 
 \vspace{2pt}
-\textbf{Software Developer} --- Can/Am Technologies, Inc. --- Lakewood, CO
+{\fontsize{11}{0}
+\textbf{Software Developer} --- Can/Am Technologies, Inc. --- Lakewood, CO}
 \hfill \textit{Feb. 2013 - Aug. 2016}
 % \begin{itemize}
 %     \item Designed and built new features for Teller, an enterprise
@@ -146,7 +150,8 @@
 % \end{itemize}
 
 \section*{\faBook\ Education}
-\textbf{Colorado School of Mines} --- Golden, CO --- M.S. Computer Science --- 4.0 GPA
+{\fontsize{11}{0}
+\textbf{Colorado School of Mines} --- Golden, CO --- M.S. Computer Science --- 4.0 GPA}
 \hfill \textit{Aug. 2018 - May 2019}
 \begin{itemize}
     % \item Worked on a project with Dr. Mehta to automate group selection in
@@ -155,31 +160,35 @@
         Guru of Mines Linux Users Group (LUG)
 \end{itemize}
 
-\textbf{Colorado School of Mines} --- Golden, CO --- B.S. Computer Science --- 3.9 GPA
+{\fontsize{11}{0}
+\textbf{Colorado School of Mines} --- Golden, CO --- B.S. Computer Science --- 3.9 GPA}
 \hfill \textit{July 2016 - May 2018}
 \begin{itemize}
     \item Outstanding Graduating Senior for Computer Science
 \end{itemize}
 
-\textbf{Red Rocks Community College} --- Lakewood, CO --- 67 Credit Hours --- 4.0 GPA
+{\fontsize{11}{0}
+\textbf{Red Rocks Community College} --- Lakewood, CO --- 67 Credit Hours --- 4.0 GPA}
 \hfill \textit{Aug. 2012 - May 2016}
 
 \section*{\faCode\ Notable Projects}
+{\fontsize{11}{0}
 \textbf{Sublime Music} (Author) ---
-\href{https://github.com/sublime-music/sublime-music}{github.com/sublime-music/sublime-music}
---- GPLv3 \hfill \textit{November 2018 - Present}
+\href{https://github.com/sublime-music/sublime-music}{github.com/sublime-music/sublime-music} --- GPLv3}
+\hfill \textit{November 2018 - Present}
 \begin{itemize}
-    \item A native Subsonic client for Linux built using \textbf{GTK} and
-        \textbf{Python}.
-    \item Allows users to connect to multiple Subsonic API-compliant servers and
-        browse and play songs from them.
+    \item A native Subsonic music server client for Linux built using
+        \textbf{GTK} and \textbf{Python}.
+    % \item Allows users to connect to multiple Subsonic API-compliant servers and
+    %     browse and play songs from them.
     % \item \textit{Features Include:} playback through Chromecast devices, DBus
     %     MPRIS integration, play queue, offline mode.
 \end{itemize}
 
+{\fontsize{11}{0}
 \textbf{Nix Home Manager} (Maintainer) ---
-\href{https://github.com/nix-community/home-manager}{github.com/nix-community/home-manager}
---- MIT \hfill \textit{April 2021 - Present}
+\href{https://github.com/nix-community/home-manager}{github.com/nix-community/home-manager}--- MIT}
+\hfill \textit{April 2021 - Present}
 % \begin{itemize}
 %     \item I am a maintainer with write-access to the project repository. I
 %         review and merge contributions to the project as well as contribute
@@ -192,17 +201,17 @@
 % \end{itemize}
 
 \section*{\faUsers\ Talks and Presentations}
-\begin{itemize}
-    % \item \textbf{Finding Your Home in Nix}
-    %     --- LinuxFest Northwest
+    % \item {\fontsize{11}{0}\textbf{Finding Your Home in Nix}
+    %     --- LinuxFest Northwest}
     %     \hfill \textit{October 2023} \\
     %     Explained and demoed Nix Home Manager, a tool for declaratively managing
     %     user home environments.
-    \item \href{https://github.com/sumnerevans/hungryserv-presentation}{%
-            \textbf{Hungryserv: A Homeserver Optimized for Unfederated Use-Cases}}
-        --- Berlin Matrix Summit
-        \hfill \textit{August 2022} \\
-        Discussed a Matrix-compatible homeserver that Beeper uses to handle
+{\fontsize{11}{0}\href{https://github.com/sumnerevans/hungryserv-presentation}{%
+\textbf{Hungryserv: A Homeserver Optimized for Unfederated Use-Cases}}
+--- Berlin Matrix Summit}
+\hfill \textit{August 2022}
+\begin{itemize}
+    \item Discussed a Matrix-compatible homeserver that Beeper uses to handle
         unfederated bridge traffic.
 \end{itemize}
 
