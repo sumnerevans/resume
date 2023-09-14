@@ -12,6 +12,7 @@
 \usepackage{sectsty}
 \usepackage{fontspec}
 \usepackage[document]{ragged2e}
+\usepackage{multicol}
 
 \tolerance=1
 \emergencystretch=\maxdimen
@@ -90,31 +91,61 @@
 {\fontsize{11}{0}
 \textbf{Adjunct Professor} --- Colorado School of Mines --- Golden, CO}
 \hfill \textit{Aug. 2018 - Present}
-\begin{itemize}
-    \item CSCI 406 \textbf{Algorithms} in Fall 2018, Spring 2022, and Fall 2023. \\
-        \textit{Topics Include:} graph algorithms, dynamic programming,
-        NP-completeness.
-        \begin{itemize}[topsep=-2pt]
-            \item Designing new homework assignments for students who took an
-                updated set of prerequisite courses.
-        \end{itemize}
-    \item CSCI 341 \textbf{Computer Organization} in Spring 2023. \\
-        \textit{Topics Included:} RISC-V assembly, computer arithmetic,
-        processor design, memory hierarchy.
-    \item CSCI 400 \textbf{Principles of Programming Languages} in Spring
-        2019, Fall 2020, Fall 2021, and Fall 2022. \\
-        \textit{Topics Included:} Lambda Calculus, functional programming in
-        OCaml, programming language implementation.
-    \item CSCI 564 \textbf{Advanced Computer Architecture} in Spring 2021. \\
-        \textit{Topics Included:} cache coherence, virtual memory, branch
-        prediction, multiprocessor architectures.
-        \begin{itemize}[topsep=-2pt]
-            \item Developed improved starter code for two projects and created
-                another project from scratch.
-            \item Created in-class worksheets to add an interactive element to
-                the course.
-        \end{itemize}
-\end{itemize}
+
+\vspace{4pt}
+\begin{minipage}[t]{0.47\linewidth}
+    \textit{\underline{Responsibilities:}}
+    \begin{itemize}[topsep=5pt]
+        \item \textbf{Lecture} to classes of 60+ students.
+        \item Hold \textbf{office hours} to assist students on projects and
+            homework.
+        \item Coordinate course content and grading policies with TAs and other
+            instructors.
+        \item \textbf{Design homework} assignments and worksheets.
+        \item \textbf{Develop new projects} with starter code.
+    \end{itemize}
+\end{minipage}\hfill%
+\begin{minipage}[t]{0.53\linewidth}
+    \textit{\underline{Courses:}}
+    \begin{itemize}[topsep=5pt]
+        \item \textbf{Algorithms} (3$\times$) \\
+            \textit{graph algorithms, dynamic programming, NP-completeness}
+        \item \textbf{Computer Organization} (1$\times$) \\
+            \textit{RISC-V assembly, processor design, memory hierarchy}
+        \item \textbf{Principles of Programming Languages} (4$\times$) \\
+            \textit{functional programming, language implementation}
+        \item \textbf{Advanced Computer Architecture} (1$\times$) \\
+            \textit{cache coherence, virtual memory, branch prediction}
+    \end{itemize}
+\end{minipage}
+
+\vspace{5pt}
+
+% \begin{itemize}
+%     \item CSCI 406 \textbf{Algorithms} in Fall 2018, Spring 2022, and Fall 2023. \\
+%         \textit{Topics Include:} graph algorithms, dynamic programming,
+%         NP-completeness.
+%         \begin{itemize}[topsep=-2pt]
+%             \item Designing new homework assignments for students who took an
+%                 updated set of prerequisite courses.
+%         \end{itemize}
+%     \item CSCI 341 \textbf{Computer Organization} in Spring 2023. \\
+%         \textit{Topics Included:} RISC-V assembly, computer arithmetic,
+%         processor design, memory hierarchy.
+%     \item CSCI 400 \textbf{Principles of Programming Languages} in Spring
+%         2019, Fall 2020, Fall 2021, and Fall 2022. \\
+%         \textit{Topics Included:} Lambda Calculus, functional programming in
+%         OCaml, programming language implementation.
+%     \item CSCI 564 \textbf{Advanced Computer Architecture} in Spring 2021. \\
+%         \textit{Topics Included:} cache coherence, virtual memory, branch
+%         prediction, multiprocessor architectures.
+%         \begin{itemize}[topsep=-2pt]
+%             \item Developed improved starter code for two projects and created
+%                 another project from scratch.
+%             \item Created in-class worksheets to add an interactive element to
+%                 the course.
+%         \end{itemize}
+% \end{itemize}
 
 {\fontsize{11}{0}
 \textbf{Software Engineer} --- The Trade Desk --- Denver, CO}
@@ -201,11 +232,15 @@
 % \end{itemize}
 
 \section*{\faUsers\ Talks and Presentations}
-    % \item {\fontsize{11}{0}\textbf{Finding Your Home in Nix}
-    %     --- LinuxFest Northwest}
-    %     \hfill \textit{October 2023} \\
-    %     Explained and demoed Nix Home Manager, a tool for declaratively managing
-    %     user home environments.
+% {\fontsize{11}{0}\href{https://github.com/sumnerevans/lfnw23-nix-home-manager}{%
+% \textbf{Finding Your Home in Nix}}
+% --- LinuxFest Northwest}
+% \hfill \textit{October 2023}
+% \begin{itemize}
+%     \item Explained and demoed Nix Home Manager, a tool for declaratively
+%         managing user home environments.
+% \end{itemize}
+
 {\fontsize{11}{0}\href{https://github.com/sumnerevans/hungryserv-presentation}{%
 \textbf{Hungryserv: A Homeserver Optimized for Unfederated Use-Cases}}
 --- Berlin Matrix Summit}
