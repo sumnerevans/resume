@@ -26,7 +26,8 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\sectionfont{\color{header-blue}\fontsize{12}{0}\selectfont\MakeUppercase}
+%\sectionfont{\color{header-blue}\fontsize{12}{0}\selectfont\MakeUppercase}
+\sectionfont{\fontsize{12}{0}\selectfont\MakeUppercase}
 \titlespacing*{\section}{0pt}{10pt}{6pt}
 \pagenumbering{gobble} % No page number
 
@@ -47,7 +48,7 @@
     \href{mailto:resume@sumnerevans.com}{\faEnvelope\ resume@sumnerevans.com}
     $\bullet$\ \href{https://matrix.to/#/@sumner:nevarro.space}{\faMatrixOrg\ @sumner:nevarro.space}
 \end{minipage}\hfill
-\begin{minipage}[b][][b]{0.4375\linewidth}
+\begin{minipage}[b][][b]{0.278\linewidth}
     \href{https://sumnerevans.com}{\faGlobe\ sumnerevans.com} \\
     \href{https://www.linkedin.com/in/sumnerevans}{\faLinkedin\ linkedin.com/in/sumnerevans} \\
     \href{https://github.com/sumnerevans}{\faGithub\ github.com/sumnerevans}
@@ -56,42 +57,47 @@
 
 \section*{\faBriefcase\ Work Experience}
 {\fontsize{11}{0}
-\textbf{Software Engineer (Beeper)} --- Automattic --- Remote}
+\textbf{Software Engineer, Beeper} --- Automattic --- Remote}
 \hfill \textit{April 2024 - Present}
 \begin{itemize}
-    \item Building the next-generation
-        \href{https://github.com/mautrix/telegramgo}{Telegram bridge}
-        in \textbf{Go}.
-    \item Implementing features in the Beeper Go SDK which is being used by the
-        next generation Beeper clients.
-    \item Implemented key backup and interactive verification in mautrix-go.
+    \item Saved {\textasciitilde}2TB of RAM by rewriting the
+        \href{https://github.com/mautrix/telegramgo}{Telegram}
+        to \textbf{Matrix} bridge from Python to \textbf{Go}.
+    \item Implemented the cryptographic key infrastructure necessary for message
+        key backups and interactive device verification in
+        \href{https://github.com/mautrix/go}{mautrix-go} by utilizing the
+        standard Go \textbf{cryptography libraries}.
+    \item Implemented media upload/download and interactive device verification
+        in the Beeper client SDK written in \textbf{Go} which is being used in
+        the next generation Beeper clients.
 \end{itemize}
 
 {\fontsize{11}{0}
 \textbf{Software Engineer} --- Beeper (acquired by Automattic) --- Remote}
 \hfill \textit{July 2021 - April 2024}
 \begin{itemize}
-    \item Reverse-engineered and implemented many core features for
-        \href{https://blog.beeper.com/p/introducing-beeper-mini-get-blue}{\textbf{Beeper Mini}}
-        including sending media, tapbacks, typing indicators, read receipts,
-        edits, unsends, link previews, and chat metadata changes.
-    \item Scaled our backend infrastructure from handling hundreds of users to
-        tens of thousands of users with
+    \item Scaled our backend infrastructure from handling \textless 1,000 users
+        to \textgreater 100,000 users by \textbf{sharding} traffic from
+        high-volume bridges to a separate \textbf{Go} service called
         \href{https://github.com/sumnerevans/hungryserv-presentation}{\textit{Hungryserv}}
-        (\textbf{Matrix}-compatible homeserver written in \textbf{Go}).
-        I created the initial proof of concept and then implemented many core
-        features as a core member of the team that productionized the project.
-    \item Streamlined our support team's ability to chat directly with users by
-        building a
-        \href{https://github.com/beeper/chatwoot}{Chatwoot bot} in
-        \textbf{Go}.
-    \item Reverse-engineered the LinkedIn Messaging API and implemented a
-        \href{https://github.com/beeper/linkedin}{LinkedIn bridge} in
-        \textbf{Python}.
+        in a backwards-compatible, transparent manner. I created the initial
+        proof of concept and then continued as a core member of the 3-member
+        team that productionized the project over a four-month period.
+    \item \textbf{Reverse-engineered} and implemented features for
+        \href{https://blog.beeper.com/p/introducing-beeper-mini-get-blue}{\textit{Beeper Mini}}
+        (iMessage on Android) including media, tapbacks, typing indicators, read
+        receipts, edits, unsends, link previews, and chat metadata changes.
+    %\item Streamlined our support team's ability to chat directly with users by
+    %    building a
+    %    \href{https://github.com/beeper/chatwoot}{Chatwoot bot} in
+    %    \textbf{Go}.
     \item Measured message send \textbf{latency and reliability} by
-        instrumenting bridge \textbf{metrics}. Built a service to process those
-        metrics and send them to BigQuery.
-    \item Defined a framework for importing users' chat history, and
+        instrumenting bridge \textbf{metrics}. Built a Dockerized \textbf{Go}
+        service to process those metrics and send them to BigQuery.
+    \item \textbf{Reverse-engineered} the LinkedIn Messaging API and implemented a
+        \href{https://github.com/beeper/linkedin}{LinkedIn} to Matrix bridge in
+        \textbf{Python}.
+    \item Designed a framework for importing users' chat history, and
         implemented it in the
         \href{https://github.com/mautrix/whatsapp}{WhatsApp},
         \href{https://github.com/mautrix/facebook}{Facebook},
@@ -103,37 +109,47 @@
 
 {\fontsize{11}{0}
 \textbf{Adjunct Professor} --- Colorado School of Mines --- Golden, CO}
-\hfill \textit{Aug. 2018 - Dec. 2023}
+\hfill \textit{Aug. 2018 - Dec. 2024}
+\begin{itemize}
+    \item \textbf{Algorithms} (4$\times$) ---
+        advanced data structures, graph algorithms, dynamic programming,
+        NP-completeness
+    \item \textbf{Principles of Programming Languages} (4$\times$) ---
+        functional programming, parsers, language implementation
+    \item \textbf{Computer Organization} (1$\times$) ---
+        RISC-V assembly, processor design, memory hierarchy
+    \item \textbf{Advanced Computer Architecture} (1$\times$) ---
+        cache coherence, virtual memory, branch prediction
+\end{itemize}
 
-\vspace{4pt}
-\hspace{0.01\linewidth}%
-\begin{minipage}[t]{0.45\linewidth}
-    \textit{\underline{Responsibilities:}}
-    \begin{itemize}[topsep=5pt]
-        \item \textbf{Lecture} to classes of 60+ students.
-        \item Hold \textbf{office hours} to assist students on projects and
-            homework.
-        \item Coordinate course content and grading policies with TAs and other
-            instructors.
-        \item \textbf{Design homework} assignments and worksheets.
-        \item \textbf{Develop new projects} with starter code.
-    \end{itemize}
-\end{minipage}\hfill%
-\begin{minipage}[t]{0.54\linewidth}
-    \textit{\underline{Courses:}}
-    \begin{itemize}[topsep=5pt]
-        \item \textbf{Algorithms} (3$\times$) \\
-            \textit{graph algorithms, dynamic programming, NP-completeness}
-        \item \textbf{Computer Organization} (1$\times$) \\
-            \textit{RISC-V assembly, processor design, memory hierarchy}
-        \item \textbf{Principles of Programming Languages} (4$\times$) \\
-            \textit{functional programming, language implementation}
-        \item \textbf{Advanced Computer Architecture} (1$\times$) \\
-            \textit{cache coherence, virtual memory, branch prediction}
-    \end{itemize}
-\end{minipage}
+%\hspace{0.01\linewidth}%
+%\begin{minipage}[t]{0.45\linewidth}
+%    \textit{\underline{Responsibilities:}}
+%    \begin{itemize}[topsep=5pt]
+%        \item \textbf{Lecture} to classes of 60+ students.
+%        \item Hold \textbf{office hours} to assist students on projects and
+%            homework.
+%        \item Coordinate course content and grading policies with TAs and other
+%            instructors.
+%        \item \textbf{Design homework} assignments and worksheets.
+%        \item \textbf{Develop new projects} with starter code.
+%    \end{itemize}
+%\end{minipage}\hfill%
+%\begin{minipage}[t]{0.54\linewidth}
+%    \textit{\underline{Courses:}}
+%    \begin{itemize}[topsep=5pt]
+%        \item \textbf{Algorithms} (3$\times$) \\
+%            \textit{graph algorithms, dynamic programming, NP-completeness}
+%        \item \textbf{Computer Organization} (1$\times$) \\
+%            \textit{RISC-V assembly, processor design, memory hierarchy}
+%        \item \textbf{Principles of Programming Languages} (4$\times$) \\
+%            \textit{functional programming, language implementation}
+%        \item \textbf{Advanced Computer Architecture} (1$\times$) \\
+%            \textit{cache coherence, virtual memory, branch prediction}
+%    \end{itemize}
+%\end{minipage}
 
-\vspace{5pt}
+\vspace{3pt}
 {\fontsize{11}{0}
 \textbf{Software Engineer} --- The Trade Desk --- Denver, CO}
 \hfill \textit{June 2019 - July 2021}
@@ -152,10 +168,15 @@
 % \textbf{Software Development Intern} --- Kenzan --- Denver, CO
 % \hfill June 2017 - Aug. 2017
 
-\vspace{2pt}
+\vspace{3pt}
 {\fontsize{11}{0}
 \textbf{Software Developer} --- Can/Am Technologies, Inc. --- Lakewood, CO}
 \hfill \textit{Feb. 2013 - Aug. 2016}
+%\begin{itemize}
+%    \item Built a Check 21 ICL (Image Cash Letter, used for electronic check
+%        deposits) file generator in \textbf{C\#}.
+%\end{itemize}
+
 % \begin{itemize}
 %     \item Designed and built new features for Teller, an enterprise
 %         point-of-sale system for municipal governments.
@@ -177,21 +198,28 @@
         Guru of Mines Linux Users Group (LUG)
 \end{itemize}
 
-\section*{\faCode\ Notable Projects}
-{\fontsize{11}{0}
-\textbf{Sublime Music} (Author) ---
-\href{https://github.com/sublime-music/sublime-music}{github.com/sublime-music/sublime-music} --- GPLv3}
-\hfill \textit{November 2018 - Present}
-%\vspace{5pt}
+\section*{\faUsers\ Talks and Presentations}
+
+{\fontsize{11}{0}\href{https://sumnerevans.com/posts/matrix/cryptographic-key-infrastructure}{%
+\textbf{Matrix Cryptographic Key Infrastructure}}
+--- Matrix Conference}
+\hfill \textit{Sept. 2024}
 \begin{itemize}
-    \item A native Subsonic music server client for Linux built using
-        \textbf{GTK} and \textbf{Python}.
-     %\item Allows users to connect to multiple Subsonic API-compliant servers and
-     %    browse and play songs from them.
-     %\item \textit{Features Include:} playback through Chromecast devices, DBus
-     %    MPRIS integration, play queue, offline mode.
+    \item Provided an overview of how key sharing, key backup, device and user
+        verification, and secret storage operate within Matrix to provide
+        cryptographically secure messaging features.
 \end{itemize}
 
+{\fontsize{11}{0}\href{https://github.com/sumnerevans/hungryserv-presentation}{%
+\textbf{Hungryserv: A Homeserver Optimized for Unfederated Use-Cases}}
+--- Berlin Matrix Summit}
+\hfill \textit{Aug. 2022}
+\begin{itemize}
+    \item Discussed a Matrix-compatible homeserver that Beeper uses to handle
+        unfederated bridge traffic.
+\end{itemize}
+
+\section*{\faCode\ Notable Projects}
 {\fontsize{11}{0}
 \textbf{Nix Home Manager} (Maintainer) ---
 \href{https://github.com/nix-community/home-manager}{github.com/nix-community/home-manager} --- MIT}
@@ -207,32 +235,19 @@
 %         % contributions to the project.
 % \end{itemize}
 
-\section*{\faUsers\ Talks and Presentations}
-% {\fontsize{11}{0}\href{https://github.com/sumnerevans/lfnw23-nix-home-manager}{%
-% \textbf{Finding Your Home in Nix}}
-% --- LinuxFest Northwest}
-% \hfill \textit{October 2023}
-% \begin{itemize}
-%     \item Explained and demoed Nix Home Manager, a tool for declaratively
-%         managing user home environments.
-% \end{itemize}
-
-{\fontsize{11}{0}\href{https://sumnerevans.com/posts/matrix/cryptographic-key-infrastructure}{%
-\textbf{Matrix Cryptographic Key Infrastructure}}
---- Matrix Conference}
-\hfill \textit{September 2024}
+\vspace{3pt}
+{\fontsize{11}{0}
+\textbf{Sublime Music} (Author) ---
+\href{https://github.com/sublime-music/sublime-music}{github.com/sublime-music/sublime-music} --- GPLv3}
+\hfill \textit{Nov. 2018 - Dec. 2024}
+%\vspace{5pt}
 \begin{itemize}
-    \item An overview of key sharing, key backup, device and user verification,
-        and secret storage within Matrix.
-\end{itemize}
-
-{\fontsize{11}{0}\href{https://github.com/sumnerevans/hungryserv-presentation}{%
-\textbf{Hungryserv: A Homeserver Optimized for Unfederated Use-Cases}}
---- Berlin Matrix Summit}
-\hfill \textit{August 2022}
-\begin{itemize}
-    \item Discussed a Matrix-compatible homeserver that Beeper uses to handle
-        unfederated bridge traffic.
+    \item A native Subsonic music server client for Linux built using
+        \textbf{GTK} and \textbf{Python}.
+     %\item Allows users to connect to multiple Subsonic API-compliant servers and
+     %    browse and play songs from them.
+     %\item \textit{Features Include:} playback through Chromecast devices, DBus
+     %    MPRIS integration, play queue, offline mode.
 \end{itemize}
 
 %\section*{\faTrophy\ Prizes and Awards}
