@@ -10,12 +10,6 @@
     };
 
     flake-utils.url = "github:numtide/flake-utils";
-
-    # Example of downloading icons from a non-flake source
-    # font-awesome = {
-    #   url = "github:FortAwesome/Font-Awesome";
-    #   flake = false;
-    # };
   };
 
   outputs = inputs@{ nixpkgs, typix, flake-utils, ... }:
