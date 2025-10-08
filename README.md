@@ -1,7 +1,7 @@
 # My Resume
 
-This is the [source code](./resume.tex) and [rendered version](./resume.pdf) of
-my resume.
+This is the [source code](./resume.typ) of my resume. Compiled versions can be
+found in the GitHub artefacts on each build.
 
 ## Copyright and License
 

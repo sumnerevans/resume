@@ -5,9 +5,9 @@ Copyright (c) Jonathan Sumner Evans (Sumner Evans). All Rights Reserved.
    redistribute the resume PDF without written consent from Sumner Evans (see
    3).
 
-2. You are free to use, modify, derive works from (i.e. compile the LaTeX), and
-   distribute the LaTeX source of the resume but you must strip any references
-   to Sumner Evans from it.
+2. You are free to use, modify, derive works from (i.e. compile the source),
+   and distribute the source of the resume but you must strip any references to
+   Sumner Evans from it.
 
 3. If you want to use anything in this repo for a reason not specified above,
    you need to get written permission from Sumner Evans by contacting him at
