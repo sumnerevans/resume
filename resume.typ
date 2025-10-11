@@ -10,7 +10,7 @@
     [
       _Last updated #datetime.display(today, "[day padding:none] [month repr:long] [year]")_
     ]
-  }
+  },
 )
 #set text(font: "Iosevka", size: 10pt)
 
@@ -33,11 +33,22 @@
     = Jonathan Sumner Evans
     #ti-mail() resume\@sumnerevans.com | #ti-brand-matrix() \@sumner:nevarro.space
   ],
-  stack(spacing: 0.4em,
-    [#link("https://sumnerevans.com")[#ti-world() sumnerevans.com]],
-    [#link("https://github.com/sumnerevans")[#ti-brand-linkedin() linkedin.com/in/sumnerevans]],
-    [#link("https://github.com/sumnerevans")[#ti-brand-github() github.com/sumnerevans]]
-  )
+  stack(
+    spacing: 0.4em,
+    [
+      #link("https://sumnerevans.com")[#ti-world() sumnerevans.com]
+    ],
+    [
+      #link(
+        "https://github.com/sumnerevans",
+      )[#ti-brand-linkedin() linkedin.com/in/sumnerevans]
+    ],
+    [
+      #link(
+        "https://github.com/sumnerevans",
+      )[#ti-brand-github() github.com/sumnerevans]
+    ],
+  ),
 )
 
 #line(length: 100%)
@@ -125,7 +136,9 @@
   #link("https://github.com/mautrix/telegramgo")[*Telegram*] to *Matrix* bridge
   by \~2TB (80%) by rewriting from Python to *Go*.
 - *Reverse-engineered* and implemented features for
-  #link("https://blog.beeper.com/p/introducing-beeper-mini-get-blue")[_Beeper Mini_]
+  #link(
+    "https://blog.beeper.com/p/introducing-beeper-mini-get-blue",
+  )[_Beeper Mini_]
   (iMessage on Android) including media, tapbacks, typing indicators, read
   receipts, edits, unsends, link previews, and chat metadata changes.
 - Implemented the cryptographic key infrastructure necessary for message key
@@ -187,7 +200,7 @@
   "B.S. + M.S. in Computer Science",
   "Golden, CO",
   datetime(year: 2016, month: 07, day: 01),
-  datetime(year: 2019, month: 05, day: 01)
+  datetime(year: 2019, month: 05, day: 01),
 )
 
 - Outstanding Graduating Senior for Computer Science
@@ -199,7 +212,7 @@
 #presentation(
   "Matrix Cryptographic Key Infrastructure",
   "Matrix Conference",
-  datetime(year: 2024, month: 09, day: 01)
+  datetime(year: 2024, month: 09, day: 01),
 )
 
 - Provided an overview of how key sharing, key backup, device and user
@@ -209,8 +222,8 @@
 #presentation(
   "Hungryserv: A Homeserver Optimized for Unfederated Use-Cases",
   "Berlin Matrix Summit",
-  datetime(year: 2022, month: 08, day: 01)
+  datetime(year: 2022, month: 08, day: 01),
 )
 
--  Discussed a Matrix-compatible homeserver that Beeper uses to handle
-   unfederated bridge traffic.
+- Discussed a Matrix-compatible homeserver that Beeper uses to handle
+  unfederated bridge traffic.

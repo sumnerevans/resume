@@ -64,7 +64,7 @@
 
         devShells.default = typixLib.devShell {
           inherit (commonArgs) fontPaths virtualPaths;
-          packages = [ watch-script ];
+          packages = [ watch-script pkgs.typstyle ];
         };
       });
 }
