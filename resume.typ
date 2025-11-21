@@ -31,7 +31,9 @@
   align: bottom,
   [
     = Jonathan Sumner Evans
-    #ti-mail() resume\@sumnerevans.com | #ti-brand-matrix() \@sumner:nevarro.space
+    #ti-mail() resume\@sumnerevans.com
+    | #ti-brand-matrix() \@sumner:nevarro.space
+    | #ti-map-pin() Denver, CO
   ],
   stack(
     spacing: 0.4em,
