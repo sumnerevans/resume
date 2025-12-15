@@ -33,7 +33,7 @@ jobs:
           repository: sumnerevans/sumnerevans.com
 
       - name: Update the resume
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: resume
           path: content/portfolio
