@@ -31,24 +31,29 @@
   align: bottom,
   [
     = Jonathan Sumner Evans
-    #ti-mail() resume\@sumnerevans.com
-    | #ti-brand-matrix() \@sumner:nevarro.space
+    #box(baseline: 11%, ti-mail()) resume\@sumnerevans.com
+    | #box(baseline: 6%, ti-brand-matrix()) \@sumner:nevarro.space
     | #ti-map-pin() Denver, CO
   ],
   stack(
     spacing: 0.4em,
     [
-      #link("https://sumnerevans.com")[#ti-world() sumnerevans.com]
+      #link("https://sumnerevans.com")[
+        #box(baseline: 14%, ti-world())
+        sumnerevans.com
+      ]
     ],
     [
-      #link(
-        "https://github.com/sumnerevans",
-      )[#ti-brand-linkedin() linkedin.com/in/sumnerevans]
+      #link("https://github.com/sumnerevans")[
+        #box(baseline: 3%, ti-brand-linkedin())
+        linkedin.com/in/sumnerevans
+      ]
     ],
     [
-      #link(
-        "https://github.com/sumnerevans",
-      )[#ti-brand-github() github.com/sumnerevans]
+      #link("https://github.com/sumnerevans")[
+        #box(baseline: 8%, ti-brand-github())
+        github.com/sumnerevans
+      ]
     ],
   ),
 )
@@ -100,7 +105,7 @@
   )
 }
 
-== #ti-briefcase-filled() WORK EXPERIENCE
+== #box(baseline: 3%, ti-briefcase-filled()) WORK EXPERIENCE
 
 #work-experience(
   "Senior Implementation Tech Lead",
@@ -195,7 +200,7 @@
   datetime(year: 2016, month: 08, day: 01),
 )
 
-== #ti-book() EDUCATION
+== #box(baseline: 5%, ti-book()) EDUCATION
 
 #education(
   "Colorado School of Mines",
@@ -209,7 +214,7 @@
 - Chair of Mines ACM, Service Chair of Tau Beta Pi, *Linux* Help Guru of Mines
   Linux Users Group (LUG)
 
-== #ti-presentation() TALKS & PRESENTATIONS
+== #box(baseline: 3%, ti-presentation()) TALKS & PRESENTATIONS
 
 #presentation(
   "Matrix Cryptographic Key Infrastructure",
