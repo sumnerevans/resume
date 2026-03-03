@@ -21,6 +21,7 @@ jobs:
           name: resume
           path: resume.pdf
           if-no-files-found: error
+          archive: false
 
   submit-update-pr:
     runs-on: ubuntu-latest
@@ -35,7 +36,7 @@ jobs:
       - name: Update the resume
         uses: actions/download-artifact@v8
         with:
-          name: resume
+          name: resume.pdf
           path: content/portfolio
 
       - run: git status
