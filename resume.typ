@@ -1,5 +1,7 @@
 #import "@preview/use-tabler-icons:0.15.0": *
 
+#set text(region: "GB")
+
 #let today = datetime.today()
 
 #set page(
@@ -115,14 +117,20 @@
   datetime.today(),
 )
 
-- Managing and mentoring the team of developers responsible for building
-  integrations with third-party vendors for Teller, a revenue centralisation
-  platform for municipal governments.
-- Collaborating with business analysts and project managers to improve
-  requirements gathering and technical feasibility assessment processes across
-  the Implementations team.
-- Leading multiple efforts to make integration architecture more declarative
-  and configuration-driven.
+- Leading a team of forward-deployed engineers responsible for integrating
+  with third-party systems.
+- Formalising a per-project _Integrations Lead_ role definition for the person
+  responsible for overseeing technical delivery of the business solution to
+  the client.
+- Encouraging adoption of AI efficiencies across the Implementations
+  engineering team.
+- Collaborating with cross-functional stakeholders to improve processes and
+  standards across the client services organisation.
+- Driving multiple efforts to make integration architecture more declarative
+  and configuration-driven enabling its amenability to AI-assisted programming
+  and configuration.
+- Implementing improved developer tooling such as automated linting for
+ integration development.
 
 #work-experience(
   "Software Engineer",
@@ -138,7 +146,7 @@
   #link("https://github.com/sumnerevans/hungryserv-presentation")[_Hungryserv_]
   in a backwards-compatible, transparent manner. I created the initial proof of
   concept and then continued as a core member of the 3-member team that
-  productionized the project over a four-month period.
+  productionised the project over a four-month period.
 - Reduced RAM usage for the
   #link("https://github.com/mautrix/telegramgo")[*Telegram*] to *Matrix* bridge
   by \~2TB (80%) by rewriting from Python to *Go*.
@@ -150,23 +158,19 @@
   receipts, edits, unsends, link previews, and chat metadata changes.
 - Implemented the cryptographic key infrastructure necessary for message key
   backups and interactive device verification in
-  #link("https://github.com/mautrix/go")[mautrix-go] by utilizing the standard
+  #link("https://github.com/mautrix/go")[mautrix-go] by utilising the standard
   Go *cryptography libraries*.
 - Implemented media upload/download and interactive device verification in the
   Beeper client SDK written in *Go* which is being used in the next generation
   Beeper clients.
 - Measured message send *latency and reliability* by instrumenting bridge
-  *metrics*. Built a Dockerized *Go* service to process those metrics and send
+  *metrics*. Built a Dockerised *Go* service to process those metrics and send
   them to BigQuery.
 - *Reverse-engineered* the LinkedIn Messaging API and implemented a
   #link("https://github.com/beeper/linkedin")[LinkedIn] to Matrix bridge in
   *Python*.
 - Designed a framework for importing users' chat history, and implemented it in
-  the
-  #link("https://github.com/mautrix/whatsapp")[WhatsApp],
-  #link("https://github.com/mautrix/facebook")[Facebook],
-  #link("https://github.com/mautrix/instagram")[Instagram], and
-  #link("https://github.com/mautrix/telegramgo")[Telegram] bridges.
+  multiple bridges.
 
 #work-experience(
   "Adjunct Professor",
@@ -176,7 +180,7 @@
   datetime(year: 2024, month: 12, day: 01),
 )
 
-- *Algorithms* 4$times$ --- advanced data structures, graph algorithms, dynamic
+- *Algorithms* (4$times$) --- advanced data structures, graph algorithms, dynamic
   programming, NP-completeness
 - *Programming Languages* (4$times$) --- functional programming, parsers, type
   systems, formal semantics
@@ -192,13 +196,6 @@
   datetime(year: 2019, month: 06, day: 01),
   datetime(year: 2021, month: 07, day: 01),
 )
-#work-experience(
-  "Software Developer Intern",
-  "Can/Am Technologies",
-  "Lakewood, CO",
-  datetime(year: 2013, month: 02, day: 01),
-  datetime(year: 2016, month: 08, day: 01),
-)
 
 == #box(baseline: 5%, ti-book()) EDUCATION
 
@@ -209,10 +206,6 @@
   datetime(year: 2016, month: 07, day: 01),
   datetime(year: 2019, month: 05, day: 01),
 )
-
-- Outstanding Graduating Senior for Computer Science
-- Chair of Mines ACM, Service Chair of Tau Beta Pi, *Linux* Help Guru of Mines
-  Linux Users Group (LUG)
 
 == #box(baseline: 3%, ti-presentation()) TALKS & PRESENTATIONS
 
