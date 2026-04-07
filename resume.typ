@@ -127,10 +127,10 @@
 - Collaborating with cross-functional stakeholders to improve processes and
   standards across the client services organisation.
 - Driving multiple efforts to make integration architecture more declarative
-  and configuration-driven enabling its amenability to AI-assisted programming
-  and configuration.
+  and configuration-driven increasing our ability to leverage AI assistants for
+  programming and configuration tasks.
 - Implementing improved developer tooling such as automated linting for
- integration development.
+  integration development.
 
 #work-experience(
   "Software Engineer",
