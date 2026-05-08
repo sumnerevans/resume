@@ -10,13 +10,13 @@
   footer: context {
     set align(center)
     [
-      _Last updated #datetime.display(today, "[day padding:none] [month repr:long] [year]")_
+      _Last updated
+      #datetime.display(today, "[day padding:none] [month repr:long] [year]")_
     ]
   },
 )
 #set text(font: "Iosevka", size: 10pt)
-
-#let heading-row-font-size = 10.5pt
+#set list(spacing: 0.9em, indent: 0.5em)
 
 #show heading.where(level: 1): it => [
   #set text(weight: 700, size: 20pt)
@@ -82,6 +82,8 @@
     ],
   )
 }
+
+#let heading-row-font-size = 10.5pt
 
 #let work-experience(title, company, location, start, end) = {
   set text(size: heading-row-font-size)
@@ -180,14 +182,9 @@
   datetime(year: 2024, month: 12, day: 01),
 )
 
-- *Algorithms* (4$times$) --- advanced data structures, graph algorithms, dynamic
-  programming, NP-completeness
-- *Programming Languages* (4$times$) --- functional programming, parsers, type
-  systems, formal semantics
-- *Computer Organization* (1$times$) --- RISC-V assembly, pipelining, processor
-  design, memory hierarchy
-- *Computer Architecture* (1$times$) --- cache coherence, virtual memory,
-  branch prediction, multiprocessors
+- Taught upper-division undergraduate courses in Computer Science including
+  Algorithms, Programming Languages, Computer Organization, and Computer
+  Architecture.
 
 #work-experience(
   "Software Engineer",
@@ -195,16 +192,6 @@
   "Denver, CO",
   datetime(year: 2019, month: 06, day: 01),
   datetime(year: 2021, month: 07, day: 01),
-)
-
-== #box(baseline: 5%, ti-book()) EDUCATION
-
-#education(
-  "Colorado School of Mines",
-  "B.S. + M.S. in Computer Science",
-  "Golden, CO",
-  datetime(year: 2016, month: 07, day: 01),
-  datetime(year: 2019, month: 05, day: 01),
 )
 
 == #box(baseline: 3%, ti-presentation()) TALKS & PRESENTATIONS
@@ -227,3 +214,13 @@
 
 - Discussed a Matrix-compatible homeserver that Beeper uses to handle
   unfederated bridge traffic.
+
+== #box(baseline: 5%, ti-book()) EDUCATION
+
+#education(
+  "Colorado School of Mines",
+  "B.S. + M.S. in Computer Science",
+  "Golden, CO",
+  datetime(year: 2016, month: 07, day: 01),
+  datetime(year: 2019, month: 05, day: 01),
+)
