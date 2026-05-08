@@ -180,9 +180,9 @@
   datetime(year: 2024, month: 12, day: 01),
 )
 
-- Taught upper-division undergraduate courses in Computer Science including
-  Algorithms, Programming Languages, Computer Organization, and Computer
-  Architecture.
+- Taught junior, senior, and graduate level courses in Computer Science
+  including Algorithms, Programming Languages, Computer Organization, and
+  Advanced Computer Architecture.
 
 #work-experience(
   "Software Engineer",
