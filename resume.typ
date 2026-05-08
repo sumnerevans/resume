@@ -2,8 +2,6 @@
 
 #set text(region: "GB")
 
-#let today = datetime.today()
-
 #set page(
   paper: "us-letter",
   margin: 0.5in,
@@ -11,7 +9,7 @@
     set align(center)
     [
       _Last updated
-      #datetime.display(today, "[day padding:none] [month repr:long] [year]")_
+      #datetime.today(offset: -6).display("[day padding:none] [month repr:long] [year]")_
     ]
   },
 )

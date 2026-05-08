@@ -12,11 +12,10 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = inputs@{ nixpkgs, typix, flake-utils, ... }:
+  outputs = { nixpkgs, typix, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        inherit (pkgs) lib;
 
         typixLib = typix.lib.${system};
 
