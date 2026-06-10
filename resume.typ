@@ -44,7 +44,7 @@
       ]
     ],
     [
-      #link("https://github.com/sumnerevans")[
+      #link("https://linkedin.com/in/sumnerevans")[
         #box(baseline: 3%, ti-brand-linkedin())
         linkedin.com/in/sumnerevans
       ]
