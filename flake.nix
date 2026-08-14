@@ -12,8 +12,15 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { nixpkgs, typix, flake-utils, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      nixpkgs,
+      typix,
+      flake-utils,
+      ...
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
@@ -29,41 +36,40 @@
             "."
           ];
 
-          virtualPaths = [{ src = ./fonts/tabler-icons.ttf; }];
+          virtualPaths = [ { src = ./fonts/tabler-icons.ttf; } ];
         };
 
-        unstable_typstPackages = [{
-          name = "use-tabler-icons";
-          version = "0.15.0";
-          hash = "sha256-vtZwe0+wHHXlZF0+wQazsdJSkLDS1WzN16QfSXZR2U0=";
-        }];
+        unstable_typstPackages = [
+          {
+            name = "use-tabler-icons";
+            version = "0.15.0";
+            hash = "sha256-vtZwe0+wHHXlZF0+wQazsdJSkLDS1WzN16QfSXZR2U0=";
+          }
+        ];
 
         # Compile a Typst project, *without* copying the result
         # to the current directory
-        build-drv = typixLib.buildTypstProject
-          (commonArgs // { inherit src unstable_typstPackages; });
+        build-drv = typixLib.buildTypstProject (commonArgs // { inherit src unstable_typstPackages; });
 
         # Compile a Typst project, and then copy the result
         # to the current directory
-        build-script = typixLib.buildTypstProjectLocal
-          (commonArgs // { inherit src unstable_typstPackages; });
-
-        # Watch a project and recompile on changes
-        watch-script = typixLib.watchTypstProject commonArgs;
-      in {
-        checks = { inherit build-drv build-script watch-script; };
+        build-script = typixLib.buildTypstProjectLocal (
+          commonArgs // { inherit src unstable_typstPackages; }
+        );
+      in
+      {
+        checks = { inherit build-drv build-script; };
 
         packages.default = build-drv;
 
-        apps = rec {
-          default = watch;
+        apps = {
           build = flake-utils.lib.mkApp { drv = build-script; };
-          watch = flake-utils.lib.mkApp { drv = watch-script; };
         };
 
         devShells.default = typixLib.devShell {
           inherit (commonArgs) fontPaths virtualPaths;
-          packages = [ watch-script pkgs.typstyle ];
+          packages = [ pkgs.typstyle ];
         };
-      });
+      }
+    );
 }
