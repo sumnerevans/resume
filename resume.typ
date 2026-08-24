@@ -99,10 +99,10 @@
   )
 }
 
-#let presentation(title, place, date) = {
+#let presentation(title, conference, location, date) = {
   set text(size: heading-row-font-size)
   generic-one-by-two(
-    left: [ *#title* --- #place ],
+    left: [ *#title* --- #conference --- #location ],
     right: [ _#showdate(date)_ ],
   )
 }
@@ -197,6 +197,7 @@
 #presentation(
   "Matrix Cryptographic Key Infrastructure",
   "Matrix Conference",
+  "Berlin",
   datetime(year: 2024, month: 09, day: 01),
 )
 
@@ -206,7 +207,8 @@
 
 #presentation(
   "Hungryserv: A Homeserver Optimized for Unfederated Use-Cases",
-  "Berlin Matrix Summit",
+  "Matrix Summit",
+  "Berlin",
   datetime(year: 2022, month: 08, day: 01),
 )
 
