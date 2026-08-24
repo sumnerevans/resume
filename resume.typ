@@ -1,4 +1,4 @@
-#import "@preview/use-tabler-icons:0.15.0": *
+#import "@preview/use-tabler-icons:0.20.0": *
 
 #set text(region: "GB")
 

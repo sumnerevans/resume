@@ -42,8 +42,8 @@
         unstable_typstPackages = [
           {
             name = "use-tabler-icons";
-            version = "0.15.0";
-            hash = "sha256-vtZwe0+wHHXlZF0+wQazsdJSkLDS1WzN16QfSXZR2U0=";
+            version = "0.20.0";
+            hash = "sha256-n7LfG+/l8Hb4RQNyO/vK0kobqpVuPlMSAd4PhSb82EQ=";
           }
         ];
 
