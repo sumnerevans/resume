@@ -32,8 +32,8 @@
   [
     = Jonathan Sumner Evans
     #box(baseline: 11%, ti-mail()) resume\@sumnerevans.com
-    | #box(baseline: 6%, ti-brand-matrix()) \@sumner:nevarro.space
-    | #ti-map-pin() Denver, CO
+    #sym.dot #box(baseline: 6%, ti-brand-matrix()) \@sumner:nevarro.space
+    #sym.dot #ti-map-pin() Denver, CO
   ],
   stack(
     spacing: 0.4em,
